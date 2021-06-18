@@ -10,13 +10,15 @@ function addButtonClickHandler() {
         // listData.push(input.value)
         let li = document.createElement('li')
         let btn = document.createElement('button')
-        btn.innerHTML = "remove";
-        li.innerHTML = input.value;
+        btn.innerHTML = "";
+        li.innerHTML = input.value;  
         myList.appendChild(li);
         myList.appendChild(btn);
+        // li.innerHTML = input.value + btn.outerHTML;
+        // myList.appendChild(li)
         btn.addEventListener("click", function(){
             myList.removeChild(li);
-            myList.removeChild(btn)
+            myList.removeChild(btn);
         })
         input.value = "";
     }

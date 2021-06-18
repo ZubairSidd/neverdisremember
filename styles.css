@@ -5,6 +5,9 @@
 body{
     font-family: 'Raleway', sans-serif;
     background-color: var(--background-color);
+}
+.container{
+    width: 700px;
     margin: auto;
 }
 .text{
@@ -25,9 +28,10 @@ body{
     background-color: var(--background-color);
     border: none;
 }
+#addButton:hover{
+    cursor: pointer;
+}
 .addItemSection{
-    /* align-content: center; */
-    
     display: flex;
     justify-content: center;
 }
@@ -42,5 +46,58 @@ body{
     border-radius: 1.5rem;
     border: 1px solid var(--text-color);
     padding: 0 2rem;
-    margin-right: 1rem
+    margin-right: 1rem;
 }
+.inputField[type = "text"]{
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    color: var(--text-color);
+    font-style: italic;
+}
+/* .listOfTodo{
+    display: flex; 
+    flex-direction: column;
+    padding-left: 2rem;
+    
+} */
+li{
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    width: 50%;
+    margin-left: 5rem;
+
+}
+/* li:nth-of-type(n){
+    width: 50%; 
+} */
+li + button{
+    padding: 1rem;
+    background: url(img/check2-circle.svg);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+}
+li + button:hover{
+    cursor: pointer;
+}
+
+/* li{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 1rem;
+    margin: auto;
+    margin: 2rem auto;
+}
+
+ul button{
+    background: url(img/check2-circle.svg);
+    padding: 1rem;
+    border: none;
+    margin: 0 rem;
+} */
