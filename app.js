@@ -18,10 +18,10 @@ function addButtonClickHandler() {
             myList.removeChild(li);
             myList.removeChild(btn)
         })
+        input.value = "";
     }
-    console.log(listData)
 
-    input.value = "";
+    
     // listData.forEach((item) => {
     //     let li = document.createElement('li')
     //     li.innerHTML = item;

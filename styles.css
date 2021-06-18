@@ -1,4 +1,46 @@
-
+:root{
+    --background-color:#FFEAC9;
+    --text-color: #0A1D37;
+}
 body{
     font-family: 'Raleway', sans-serif;
+    background-color: var(--background-color);
+    margin: auto;
+}
+.text{
+    color: var(--text-color);
+}
+#headerLogo{
+    vertical-align: middle;
+    padding: 0 0.5rem;
+    fill: var(--text-color);
+}
+.header{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+#addButton{
+    background-color: var(--background-color);
+    border: none;
+}
+.addItemSection{
+    /* align-content: center; */
+    
+    display: flex;
+    justify-content: center;
+}
+.listText{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+    margin-right: 1rem;
+}
+.inputField{
+    background-color: #fffbf6;
+    border-radius: 1.5rem;
+    border: 1px solid var(--text-color);
+    padding: 0 2rem;
+    margin-right: 1rem
 }
