@@ -61,18 +61,18 @@ body{
     padding-left: 2rem;
     
 } */
-li{
+/* li{
     display: inline-block;
     margin: 1rem 0;
     font-size: 1.5rem;
     width: 50%;
     margin-left: 5rem;
 
-}
+} */
 /* li:nth-of-type(n){
     width: 50%; 
 } */
-li + button{
+/* li + button{
     padding: 1rem;
     background: url(img/check2-circle.svg);
     background-repeat: no-repeat;
@@ -81,9 +81,9 @@ li + button{
 }
 li + button:hover{
     cursor: pointer;
-}
+} */
 
-/* li{
+li{
     width: 500px;
     display: flex;
     justify-content: space-between;
@@ -95,9 +95,13 @@ li + button:hover{
     margin: 2rem auto;
 }
 
-ul button{
+li > button{
     background: url(img/check2-circle.svg);
     padding: 1rem;
     border: none;
     margin: 0 rem;
-} */
+}
+
+li > button:hover{
+    cursor: pointer;
+}
